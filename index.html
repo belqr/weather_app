@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="search_box">
+      <img class="location_icon" src="assets/icons/location.png" alt="Icone localização">
+      <input type="text" placeholder="Insira sua localização">
+      <button>
+        <img class="search_icon" src="assets/icons/search.png" alt="">
+      </button>
+    </div>
+    <div class="not_found">
+      <img src="assets/404_not_found.png">
+      <p>Oops! Localização inválida x.x</p>
+    </div>
+    <div class="weather_box">
+      <img class="weather_image" src="" alt="">
+      <p class="temperature"></p>
+      <p class="description"></p>
+    </div>
+    <div class="weather_details">
+      <div class="humidity">
+        <img class="humidity_icon" src="assets/icons/weather.png" alt="Clima">
+        <div class="text">
+          <span></span>
+          <p>Úmidade</p>
+        </div>
+      </div>
+      <div class="wind">
+        <img class="wind_icon" src="assets/icons/wind.png" alt="Vento">
+        <div class="text">
+          <span></span>
+          <p>Vento</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>

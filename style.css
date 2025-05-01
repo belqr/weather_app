@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cascadia Code", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(100, 149, 237);
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 600px;
+  height: 110px;
+  padding: 28px 32px;
+  border-radius: 20px;
+  background-color: rgb(255, 248, 220);
+  transition: 0.5s ease-out
+}
+
+.search_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search_box input {
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+}
+
+.search_box input::placeholder{
+  font-size: 20px;
+  font-weight: 500;
+}
+.search_box input:focus {
+  outline: none;
+}
+
+.search_box .search_icon {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.search_box .search_icon:hover {
+  width: 55px;
+  height: 55px;
+}
+
+.search_box button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+}
+
+.search_box .location_icon {
+  width: 50px;
+}
+
+.weather_box {
+  text-align: center;
+}
+
+.weather_box .weather_image {
+  width: 60%;
+  margin-top: 30px;
+}
+
+.weather_box .temperature {
+  margin-top: 30px;
+  position: relative;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.weather_box .temperature span {
+  margin-left: 4px;
+  position: absolute;
+  font-size: 1.5rem;
+}
+
+.weather_box .description {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.weather_details {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather_details .humidity, 
+.weather_details .wind {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.weather_details .humidity {
+  padding-left: 20px;
+  justify-content: flex-start;
+}
+
+.weather_details .wind {
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+.humidity_icon, .wind_icon {
+  width: 50px;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.weather_details span {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.weather_details p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.not_found {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  scale: 0;
+  opacity: 0;
+  display: none;
+}
+
+.not_found img {
+  width: 70%;
+}
+
+.not_found p {
+  margin-top: 12px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.weather_box,
+.weather_details {
+  scale: 0;
+  opacity: 0;
+}
+
+.fade-in {
+  animation: 0.5s dropdownAnimation forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes dropdownAnimation {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.dropdownAnimation {
+  animation: dropdownAnimation 0.5s forwards;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 80%;
+    height: 90px;
+    padding: 20px;
+  }
+
+  .search_box input {
+    font-size: 14px;
+  }
+
+  .search_box input::placeholder {
+    font-size: 13px;
+  }
+
+  .search_box .search_icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search_box .location_icon {
+    display: none;
+  }
+
+  .search_box button {
+    width: 40px;
+  }
+
+  .weather_box .weather_image {
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  .weather_details {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+  }
+
+  .weather_details .humidity, 
+  .weather_details .wind {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .weather_details .humidity {
+    padding-left: 0px;
+    justify-content: flex-start;
+  }
+
+  .weather_details .wind {
+    padding-right: 0px;
+    justify-content: flex-start;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .weather_details span {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .weather_details p {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .not_found {
+    margin-top: 60px;
+  }
+
+  .not_found img {
+    width: 100%;
+  }
+
+  .not_found p {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
