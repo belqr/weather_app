@@ -22,5 +22,7 @@ O principal objetivo deste projeto é praticar e demonstrar habilidades em:
 - 🖼️ As imagens e ícones foram gerados via IA. As alterações de fundo transmitem a sensação do clima atual, tornando a experiência mais imersiva.
 
 ## 📸 Prévia
-
 ![image](https://github.com/user-attachments/assets/22b8d9da-125f-43ce-9177-2122cc4c2941)
+
+# 🔗 Veja aqui
+[Weather App](https://weather-app-delta-eight-29.vercel.app/)
