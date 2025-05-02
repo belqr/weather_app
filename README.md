@@ -13,8 +13,9 @@ O principal objetivo deste projeto é praticar e demonstrar habilidades em:
 # 🧪 Tecnologias Utilizadas
 - HTML5 – estrutura semântica da aplicação.
 - CSS3 – estilos visuais, incluindo planos de fundo dinâmicos e responsividade.
-- JavaScript Vanilla – responsável pela lógica de tempo, obtenção do clima e manipulação do DOM.
-
+- JavaScript Vanilla – responsável pela lógica de tempo, manipulação do DOM e consumo da API de clima via fetch.
+- API de Clima: [OpenWeather](https://openweathermap.org/api) – utilizada para obter dados meteorológicos em tempo real com base na localização do usuário.
+  
 # ⚙️ Funcionalidades
 - 🌍 Clima em tempo real com base na localização do usuário;
 - 🌄 Alteração automática do plano de fundo e ícones do clima conforme as condições climáticas (ensolarado, nublado, chuvoso, etc.);
